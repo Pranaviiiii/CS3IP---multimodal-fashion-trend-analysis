@@ -33,19 +33,7 @@ The project integrates image and text data from Instagram and Pinterest, leverag
 - Developed an interactive **Streamlit dashboard** for real-time exploration
 - Selected for demonstration at the **University of Reading Open Day**
 
----
 
-# 🖼 Dashboard Preview
-
-> Replace these placeholders with screenshots from your dashboard.
-
-| Home | Trend Analysis |
-|------|----------------|
-| ![](assets/dashboard_home.png) | ![](assets/trend_analysis.png) |
-
-| Forecasting | Cluster Explorer |
-|-------------|------------------|
-| ![](assets/forecasting.png) | ![](assets/cluster_explorer.png) |
 
 ---
 
