@@ -1,446 +1,260 @@
-# Machine Learning-Based Analysis of Social Media Content for Fashion Trend Discovery
+# Multimodal Fashion Trend Analysis using Vision-Language Models
 
-## Overview
+![Python](https://img.shields.io/badge/Python-3.11-blue)
+![PyTorch](https://img.shields.io/badge/PyTorch-2.x-red)
+![Scikit-Learn](https://img.shields.io/badge/scikit--learn-ML-orange)
+![Streamlit](https://img.shields.io/badge/Streamlit-Dashboard-red)
+![License](https://img.shields.io/badge/License-Academic-lightgrey)
 
-This project investigates whether multimodal social media data can be used to identify and forecast fashion trends. The system combines Instagram caption data and Pinterest image data using modern machine learning techniques, including multimodal representation learning, unsupervised clustering, temporal trend analysis, and forecasting.
+An end-to-end machine learning system for analysing multimodal social media content to discover and forecast emerging fashion trends using **vision-language models, unsupervised learning, temporal analysis, and interactive visualisation**.
 
-The project was developed as a final-year Computer Science dissertation focused on understanding how social media platforms influence modern fashion trend formation.
+The project integrates image and text data from Instagram and Pinterest, leveraging **OpenAI CLIP** embeddings to learn shared semantic representations before identifying latent fashion archetypes through clustering and analysing their evolution over time.
 
-link for interactive dashboard ->> https://fashion-trend-discovery-dashboard.streamlit.app/
----
-
-## Project Objectives
-
-The main objectives of the project were:
-
-* Analyse large-scale social media fashion data
-* Combine textual and visual fashion content into a shared feature space
-* Discover latent fashion archetypes using unsupervised learning
-* Track the evolution of fashion trends over time
-* Evaluate whether fashion trends can be reliably forecasted
-* Build an interactive dashboard for trend exploration and forecasting visualisation
+> 🎓 Developed as a First Class undergraduate dissertation in Computer Science at the University of Reading.
 
 ---
 
-## Technologies Used
+# 🚀 Live Interactive Dashboard
 
-### Programming Language
+**Explore the deployed Streamlit application**
 
-* Python 3
-
-### Machine Learning & Data Science Libraries
-
-* pandas
-* NumPy
-* scikit-learn
-* matplotlib
-* seaborn
-* transformers
-* torch
-* open_clip
-
-### Dashboard & Visualisation
-
-* Streamlit
-* Plotly
-
-### Other Tools
-
-* Jupyter Notebook
-* VS Code
-* GitHub
+🔗 https://fashion-trend-discovery-dashboard.streamlit.app/
 
 ---
 
-## Dataset Sources
+# 📌 Project Highlights
 
-### Instagram Dataset
-
-* STL Dataset (Shop The Look)
-* Source: [https://github.com/kang205/STL-Dataset](https://github.com/kang205/STL-Dataset)
-
-### Pinterest Dataset
-
-* Pinterest Fashion Dataset
-* Source: [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7AW6F](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7AW6F)
-
----
-
-## Methodology
-
-# Machine Learning-Based Analysis of Social Media Content for Fashion Trend Discovery
-
-## Overview
-
-This project investigates whether multimodal social media data can be used to identify and forecast fashion trends. The system combines Instagram caption data and Pinterest image data using modern machine learning techniques, including multimodal representation learning, unsupervised clustering, temporal trend analysis, and forecasting.
-
-The project was developed as a final-year Computer Science dissertation focused on understanding how social media platforms influence modern fashion trend formation.
-
-link for interactive dashboard ->> https://fashion-trend-discovery-dashboard.streamlit.app/
----
-
-## Project Objectives
-
-The main objectives of the project were:
-
-* Analyse large-scale social media fashion data
-* Combine textual and visual fashion content into a shared feature space
-* Discover latent fashion archetypes using unsupervised learning
-* Track the evolution of fashion trends over time
-* Evaluate whether fashion trends can be reliably forecasted
-* Build an interactive dashboard for trend exploration and forecasting visualisation
+- Analysed **25,000+ multimodal social media records**
+- Implemented **OpenAI CLIP** for joint image-text embeddings
+- Built a complete **multimodal machine learning pipeline**
+- Applied **K-Means clustering** for fashion archetype discovery
+- Performed **temporal trend analysis** across social media activity
+- Compared **Linear Regression** against **Naïve forecasting baselines**
+- Developed an interactive **Streamlit dashboard** for real-time exploration
+- Selected for demonstration at the **University of Reading Open Day**
 
 ---
 
-## Technologies Used
+# 🖼 Dashboard Preview
 
-### Programming Language
+> Replace these placeholders with screenshots from your dashboard.
 
-* Python 3
+| Home | Trend Analysis |
+|------|----------------|
+| ![](assets/dashboard_home.png) | ![](assets/trend_analysis.png) |
 
-### Machine Learning & Data Science Libraries
-
-* pandas
-* NumPy
-* scikit-learn
-* matplotlib
-* seaborn
-* transformers
-* torch
-* open_clip
-
-### Dashboard & Visualisation
-
-* Streamlit
-* Plotly
-
-### Other Tools
-
-* Jupyter Notebook
-* VS Code
-* GitHub
+| Forecasting | Cluster Explorer |
+|-------------|------------------|
+| ![](assets/forecasting.png) | ![](assets/cluster_explorer.png) |
 
 ---
 
-## Dataset Sources
+# 🎯 Project Motivation
 
-### Instagram Dataset
+Social media platforms have become major drivers of fashion trends, producing vast amounts of multimodal data through images, captions and user interactions.
 
-* STL Dataset (Shop The Look)
-* Source: [https://github.com/kang205/STL-Dataset](https://github.com/kang205/STL-Dataset)
+Traditional trend forecasting relies heavily on expert judgement and historical sales data. This project investigates whether **vision-language models** and **machine learning** can automatically discover emerging fashion patterns directly from large-scale social media content.
 
-### Pinterest Dataset
-
-* Pinterest Fashion Dataset
-* Source: [https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7AW6F](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/K7AW6F)
+The objective is not simply to classify images, but to understand how visual and textual information combine to reveal meaningful fashion archetypes and their evolution over time.
 
 ---
 
-## Methodology
+# 🏗 Machine Learning Pipeline
 
-The project follows a modular machine learning pipeline:
-
-### 1. Data Collection
-
-* Instagram captions used as textual fashion data
-* Pinterest images used as visual fashion data
-
-### 2. Data Preprocessing
-
-* Caption cleaning and normalisation
-* Timestamp filtering and temporal formatting
-* Image validation and preprocessing
-* Unified multimodal dataset construction
-
-### 3. Feature Representation
-
-* CLIP (Contrastive Language-Image Pretraining) used for embedding generation
-* Text and images encoded into a shared embedding space
-
-### 4. Clustering
-
-* K-Means clustering applied to multimodal embeddings
-* Silhouette analysis used for K selection
-* Final clustering performed with K = 8
-
-### 5. Temporal Trend Analysis
-
-* Monthly aggregation of cluster distributions
-* Trend momentum calculation
-* Analysis of trend evolution over time
-
-### 6. Forecasting
-
-* Linear Regression forecasting model
-* Naive baseline forecasting model
-* Forecast evaluation using MAE and MAPE
-
-### 7. Dashboard Development
-
-* Interactive Streamlit dashboard
-* Trend analysis visualisations
-* Forecasting visualisations
-* Cluster exploration interface
+```
+Instagram Captions
+            │
+Pinterest Images
+            │
+────────────────────────
+     Data Preprocessing
+────────────────────────
+            │
+     OpenAI CLIP Encoder
+            │
+ Shared Image–Text Embeddings
+            │
+      K-Means Clustering
+            │
+ Temporal Trend Analysis
+            │
+ Forecasting (Linear vs Naïve)
+            │
+ Interactive Streamlit Dashboard
+```
 
 ---
 
-## Repository Structure
+# ⚙️ Methodology
 
-```text
-DEGREE_PROJECT/
-│
+## 1. Data Collection
+
+- Instagram captions (STL Dataset)
+- Pinterest fashion images
+
+---
+
+## 2. Data Preprocessing
+
+- Caption cleaning
+- Timestamp normalisation
+- Image validation
+- Dataset integration
+
+---
+
+## 3. Representation Learning
+
+Images and text are encoded into a shared semantic embedding space using **OpenAI CLIP**, enabling multimodal similarity learning and downstream clustering.
+
+---
+
+## 4. Unsupervised Learning
+
+Fashion archetypes are discovered using **K-Means clustering**, with silhouette analysis used to determine the optimal number of clusters.
+
+---
+
+## 5. Temporal Analysis
+
+Monthly cluster frequencies are analysed to measure trend momentum and identify emerging or declining fashion styles.
+
+---
+
+## 6. Forecasting
+
+Trend trajectories are forecast using:
+
+- Linear Regression
+- Naïve Baseline
+
+Performance is evaluated using:
+
+- MAE
+- MAPE
+
+---
+
+## 7. Interactive Dashboard
+
+The Streamlit dashboard enables users to:
+
+- Explore discovered fashion clusters
+- Compare forecasting models
+- Visualise trend evolution
+- Inspect representative image examples
+
+---
+
+# 🛠 Technologies
+
+## Programming
+
+- Python
+
+## Machine Learning
+
+- OpenAI CLIP
+- PyTorch
+- Scikit-learn
+- Transformers
+
+## Data Science
+
+- Pandas
+- NumPy
+
+## Visualisation
+
+- Plotly
+- Streamlit
+
+## Development
+
+- Git
+- Jupyter Notebook
+- VS Code
+
+---
+
+# 📂 Repository Structure
+
+```
+.
 ├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── schema.md
-│
-├── notebooks/
-│   └── 01_data_exploration.ipynb
-│
 ├── pages/
-│   ├── 1_Trend_Analysis.py
-│   ├── 2_Forecasting.py
-│   └── 3_Trend_Explorer.py
-│
 ├── src/
-│   ├── backtesting.py
-│   ├── clustering.py
-│   ├── data_loader.py
-│   ├── embeddings.py
-│   ├── exemplars.py
-The project follows a modular machine learning pipeline:
-
-### 1. Data Collection
-
-* Instagram captions used as textual fashion data
-* Pinterest images used as visual fashion data
-
-### 2. Data Preprocessing
-
-* Caption cleaning and normalisation
-* Timestamp filtering and temporal formatting
-* Image validation and preprocessing
-* Unified multimodal dataset construction
-
-### 3. Feature Representation
-
-* CLIP (Contrastive Language-Image Pretraining) used for embedding generation
-* Text and images encoded into a shared embedding space
-
-### 4. Clustering
-
-* K-Means clustering applied to multimodal embeddings
-* Silhouette analysis used for K selection
-* Final clustering performed with K = 8
-
-### 5. Temporal Trend Analysis
-
-* Monthly aggregation of cluster distributions
-* Trend momentum calculation
-* Analysis of trend evolution over time
-
-### 6. Forecasting
-
-* Linear Regression forecasting model
-* Naive baseline forecasting model
-* Forecast evaluation using MAE and MAPE
-
-### 7. Dashboard Development
-
-* Interactive Streamlit dashboard
-* Trend analysis visualisations
-* Forecasting visualisations
-* Cluster exploration interface
-
----
-
-## Repository Structure
-
-```text
-DEGREE_PROJECT/
-│
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── schema.md
-│
-├── notebooks/
-│   └── 01_data_exploration.ipynb
-│
-├── pages/
-│   ├── 1_Trend_Analysis.py
-│   ├── 2_Forecasting.py
-│   └── 3_Trend_Explorer.py
-│
-├── src/
-│   ├── backtesting.py
-│   ├── clustering.py
-│   ├── data_loader.py
-│   ├── embeddings.py
-│   ├── exemplars.py
-│   ├── forecasting.py
-│   └── trend_analysis.py
-│
 ├── assets/
-│   ├── cluster_image_grid.png
-│   ├── dataset_composition.png
-│   ├── final_poster_graph.png
-│   └── modality_example.png
-│
 ├── scripts/
-│   ├── plot_k_sweep.py
-│   ├── rebuild_pinterest_exemplars.py
-│   ├── run_backtest.py
-│   ├── run_full_clusterings.py
-│   ├── run_full_embeddings.py
-│   ├── run_k_sweep.py
-│   ├── run_pipeline.py
-│   └── test_clip_sample.py
-│
-├── app.py
 ├── Home.py
-├── presentation.py
-├── README.md
 ├── requirements.txt
-├── .gitignore
+├── README.md
 └── LICENSE
 ```
 
 ---
 
-## Dashboard Features
+# 📊 Key Results
 
-The Streamlit dashboard includes:
-
-* Interactive trend analysis visualisations
-* Cluster evolution over time
-* Forecast comparison charts
-* Cluster explorer with exemplar content
-* Fashion trend momentum rankings
-* Forecasting model evaluation
+- Successfully generated multimodal embeddings representing both visual and textual fashion content.
+- Identified interpretable fashion archetypes using unsupervised clustering.
+- Demonstrated that multimodal social media data can reveal evolving fashion trends.
+- Found that Naïve forecasting consistently outperformed Linear Regression for highly volatile social media trends.
+- Developed an interactive dashboard enabling intuitive exploration of discovered clusters and trend evolution.
 
 ---
 
-## Key Findings
+# 💻 Installation
 
-* Multimodal social media data can successfully reveal meaningful fashion patterns
-* CLIP embeddings effectively capture semantic relationships between text and images
-* K-Means clustering identifies interpretable fashion archetypes
-* Fashion trends on social media are highly dynamic and volatile
-* Naive forecasting baselines outperform linear regression in many cases
-* Social media is effective for trend detection but difficult for reliable forecasting
+Clone the repository
 
----
+```bash
+git clone https://github.com/Pranaviiiii/multimodal-fashion-trend-analysis.git
+```
 
-## Running the Project
-
-### Install Dependencies
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
 ```
 
-### Run the Streamlit Dashboard
+Run the dashboard
 
 ```bash
-python -m streamlit run home.py
+streamlit run Home.py
 ```
 
 ---
 
-│   ├── forecasting.py
-│   └── trend_analysis.py
-│
-├── assets/
-│   ├── cluster_image_grid.png
-│   ├── dataset_composition.png
-│   ├── final_poster_graph.png
-│   └── modality_example.png
-│
-├── scripts/
-│   ├── plot_k_sweep.py
-│   ├── rebuild_pinterest_exemplars.py
-│   ├── run_backtest.py
-│   ├── run_full_clusterings.py
-│   ├── run_full_embeddings.py
-│   ├── run_k_sweep.py
-│   ├── run_pipeline.py
-│   └── test_clip_sample.py
-│
-├── app.py
-├── Home.py
-├── presentation.py
-├── README.md
-├── requirements.txt
-├── .gitignore
-└── LICENSE
-```
+# 📈 Future Improvements
+
+Potential future extensions include:
+
+- Fine-tuning CLIP for fashion-specific representations
+- Integration of TikTok and additional social media platforms
+- Transformer-based forecasting models
+- Graph Neural Networks for social trend propagation
+- Real-time streaming data pipelines
+- Edge deployment optimisation for mobile inference
+- Improved explainability using attention visualisation
 
 ---
 
-## Dashboard Features
+# 👩‍💻 Author
 
-The Streamlit dashboard includes:
+**Pranavi Rawal**
 
-* Interactive trend analysis visualisations
-* Cluster evolution over time
-* Forecast comparison charts
-* Cluster explorer with exemplar content
-* Fashion trend momentum rankings
-* Forecasting model evaluation
-
----
-
-## Key Findings
-
-* Multimodal social media data can successfully reveal meaningful fashion patterns
-* CLIP embeddings effectively capture semantic relationships between text and images
-* K-Means clustering identifies interpretable fashion archetypes
-* Fashion trends on social media are highly dynamic and volatile
-* Naive forecasting baselines outperform linear regression in many cases
-* Social media is effective for trend detection but difficult for reliable forecasting
-
----
-
-## Running the Project
-
-### Install Dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### Run the Streamlit Dashboard
-
-```bash
-python -m streamlit run home.py
-```
-
----
-
-## Future Improvements
-
-Potential future work includes:
-
-* Integrating TikTok and additional social media platforms
-* Using Instagram image data directly
-* Extending the temporal range of the dataset
-* Applying advanced forecasting models such as ARIMA and LSTM
-* Implementing bias mitigation techniques for platform-driven datasets
-* Improving quantitative cluster validation
-
----
-
-## Author
-
-Pranavi Rawal
-Final Year Computer Science Project
+First Class BSc (Hons) Computer Science  
 University of Reading
 
+LinkedIn: https://linkedin.com/in/pranavi-rawal
+
+GitHub: https://github.com/Pranaviiiii
+
 ---
 
-## License
+# 📄 License
 
-This project was developed for academic purposes.
+This repository is released for academic and portfolio purposes.
 
-
+Datasets remain subject to their respective licences.
