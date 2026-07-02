@@ -17,7 +17,7 @@ This project was completed as my undergraduate dissertation for the BSc Computer
 
 The interactive dashboard is available here:
 
-**https://fashion-trend-discovery-dashboard.streamlit.app/**
+**[https://fashion-trend-discovery-dashboard.streamlit.app/](https://fashion-trend-dashboard.streamlit.app/)**
 
 ---
 
